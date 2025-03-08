@@ -103,5 +103,3 @@
   ]
   body
 }
-
-#let codefile(filename, lang) = raw(read(filename), lang: lang, block: true)

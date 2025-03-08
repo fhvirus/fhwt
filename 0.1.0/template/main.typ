@@ -1,4 +1,4 @@
-#import "fhwt.typ": *
+#import "@local/fhwt:0.1.0": *
 #show: conf
 
 #show "LaTeX": [L#super("A")T#sub("E")X]
@@ -58,8 +58,6 @@ $ #let contra = { $arrow.r #h(-0.1em) arrow.l$ }
 
 I placed contra and inner(x) inside math scope to make the code cleaner.
 Since they are seldomly used, I do not define them in the template.
-
-#pagebreak()
 
 = Blocks
 
@@ -176,8 +174,6 @@ For more examples, visit https://github.com/sahasatvik/typst-theorems .
   #theorem(number: "6.1")[ I'm sorry but you have to do the numbering yourself. ]
   Problem numbering is independent, too. ]
 
-#pagebreak()
-
 == Code
 
 Just use the built-in one!
@@ -196,16 +192,13 @@ produces:
 int main() {}
 ```
 
-And using `#codefile(filename, lang)` we get:
+And with `#raw(read("a.cpp"), lang: "cpp", block: true)` we get:
 
-#codefile("a.cpp", "cpp")
-
+#raw(read("a.cpp"), lang: "cpp", block: true)
 
 == Image
 
 Just use https://typst.app/docs/reference/visualize/image/ .
-
-#pagebreak()
 
 = Drawing
 
