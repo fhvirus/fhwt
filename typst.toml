@@ -1,0 +1,11 @@
+[package]
+name = "fhwt"
+version = "0.1.0"
+entrypoint = "fhwt.typ"
+authors = ["FHVirus"]
+license = "MIT-0"
+description = "A template for homework, Typst port from FHW"
+
+[template]
+path = "."
+entrypoint = "main.typ"
