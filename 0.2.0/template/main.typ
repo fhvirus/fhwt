@@ -1,4 +1,4 @@
-#import "@local/fhwt:0.1.0": *
+#import "@local/fhwt:0.2.0": *
 #show: conf
 
 #show "LaTeX": [L#super("A")T#sub("E")X]
@@ -58,6 +58,8 @@ $ #let contra = { $arrow.r #h(-0.1em) arrow.l$ }
 
 I placed contra and inner(x) inside math scope to make the code cleaner.
 Since they are seldomly used, I do not define them in the template.
+
+#pagebreak()
 
 = Blocks
 
@@ -174,6 +176,7 @@ For more examples, visit https://github.com/sahasatvik/typst-theorems .
   #theorem(number: "6.1")[ I'm sorry but you have to do the numbering yourself. ]
   Problem numbering is independent, too. ]
 
+#pagebreak()
 == Code
 
 Just use the built-in one!
@@ -204,6 +207,7 @@ Just use https://typst.app/docs/reference/visualize/image/ .
 
 TODO CetZ seems powerful, yet I'm not sure what can I achieve with the built-in functions and when should I use the package.
 
+#pagebreak()
 = Lorem Ipsums
 
 == Chinese lorem
