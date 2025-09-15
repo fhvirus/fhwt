@@ -31,9 +31,6 @@
     header-ascent: 0pt,
     numbering: "1"
   )
-  set par(justify: true)
-  set heading(numbering: "1.1")
-  show link: underline
 
   //---------------------- Code Block Background ----------------------//
   show raw: set text(font: ("DejaVu Sans Mono", "Noto Sans Mono CJK TC"))
@@ -68,6 +65,12 @@
       #text(24pt, weight: "bold")[#Title]
     ]
   }
+
+  //---------------------- More Typesetting --------------------//
+  set par(leading: 0.55em, spacing: 0.55em, first-line-indent: 1.8em, justify: true)
+  set heading(numbering: "1.1")
+  show heading: set block(above: 1.4em, below: 1em)
+  show link: underline
 
   //---------------------- Theorem Blocks ----------------------//
   // TODO: Can I not import twice?
